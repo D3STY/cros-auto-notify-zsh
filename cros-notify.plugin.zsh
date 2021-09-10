@@ -1,4 +1,4 @@
-1export AUTO_NOTIFY_VERSION="0.8.1"
+export AUTO_NOTIFY_VERSION="0.8.1"
 
 # Time it takes for a notification to expire
 export AUTO_NOTIFY_EXPIRE_TIME=8000
