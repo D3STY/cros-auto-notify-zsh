@@ -26,7 +26,7 @@ function _auto_notify_message() {
     local exit_code="$3"
     local platform="$(uname)"
     local urgency="normal"
-    local hostname=$(hostname)
+    local hostname=$(hostname -n)
     # Run using echo -e in order to make sure hterm-notify picks up new line
     local DEFAULT_TITLE="\"%command\"%hostname\" Completed"
     local DEFAULT_BODY="$(echo -e "Total time: %elapsed seconds\nExit code: %exit_code\n on %hostname")"
