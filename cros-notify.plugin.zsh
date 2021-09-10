@@ -147,8 +147,8 @@ _auto_notify_reset_tracking
 
 
 platform="$(uname)"
-if [[ "$platform" == "Linux" ]] && ! type hterm-notify- > /dev/null; then
-    printf "'hterm-notify.sh' must be installed for zsh-auto-notify to work\n"
+if [[ "$platform" == "Linux" ]] && ! type hterm-notify > /dev/null; then
+    printf "'hterm-notify.sh' must be installed for cros-notify to work\n"
     printf "Please install it with your relevant package manager\n"
 else
     enable_auto_notify
