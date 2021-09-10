@@ -1,5 +1,8 @@
 Changelog for zsh-auto-notify
 =============================
+0.8.1
+-----
+* Patch for CrOS/hterm-notify.sh
 
 0.8.0
 -----

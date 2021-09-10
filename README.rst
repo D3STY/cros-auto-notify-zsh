@@ -37,7 +37,7 @@ However they would not have been tested as part of the CI test process.
 
 Supported desktop environments:
 
-* Linux X/Wayland (Requires ``notify-send`` to be installed)
+* CrOS/Linux (Requires ``hterm-notify`` to be installed)
 * MacOSX
 
 Installation
@@ -102,6 +102,7 @@ the data that ``auto-notify`` has detected:
 * ``%command`` - the command that the user executed
 * ``%elapsed`` - number of seconds that elapsed
 * ``%exit_code`` - the exit code of the command that was executed
+* ``%hostname`` - shoort hostname (without domain)
 
 An example of how these values can be set is shown below:
 
@@ -191,8 +192,8 @@ directory of the repo.
     ✔ version exported
     ✔ hook functions are loaded by default
     ✔ enable/disable auto-notify
-    ✔ auto-notify-send does not send notification for short task
-    ✔ auto-notify-send does not send notification for ignored commands
+    ✔ auto-hterm-notify does not send notification for short task
+    ✔ auto-hterm-notify does not send notification for ignored commands
 
 NOTE: It is required that you use a minimum zunit version of 0.8.2
 
